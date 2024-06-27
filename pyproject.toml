@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fastapi-db-test-example"
+version = "1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "*"
+fastapi-cli = "*"
+sqlalchemy = "*"
+sqlmodel = "*"
+pytest = "*"
+uvicorn = "*"
+alembic = "*"
+httpx = "*"
+
+
+[tool.poetry.scripts]
+app = "lib.app:app"
