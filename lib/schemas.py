@@ -31,3 +31,7 @@ class Author(AuthorBase):
 
     class Config:
         from_attributes = True
+
+
+Author.model_rebuild()
+Book.model_rebuild()
